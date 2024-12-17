@@ -5,7 +5,8 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 50px repeat(6, 1fr) 50px;
-    grid-template-areas: "hd hd hd hd hd hd hd hd hd hd "/*row 1*/
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd "/*row 1*/
     "s2 s2 s2 s2 m m m m m m"
     "s2 s2 s2 s2  m m m m m m"
     "s3 s3 s3 s3  m m m m m m"

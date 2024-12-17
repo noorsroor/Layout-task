@@ -8,56 +8,56 @@ body {
     width: 800px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 50px auto 50px;
-    grid-template-areas: " head head head head head head head head"
-    "side side art art art art art art"
-    " foot foot foot foot foot foot foot foot";
     gap: 20px;
     color: white;
 }
 
 header {
-    grid-area: head;
     background-color: #02B9AB;
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-column: span 8;
+    grid-row: 1;
 }
 
 aside {
-    grid-area: side;
     background-color: #6BD46B;
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-column: span 2; 
+    grid-row: 2;
 }
 
 article {
-    grid-area: art;
     background-color: #F3AA4A;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: end;
-
+    text-align: center;
+    grid-column: span 6; 
+    grid-row: 2;
 }
 
 footer {
-    grid-area: foot;
     background-color: #02B9AB;
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-column: span 8; /* Spans all 8 columns */
+    grid-row: 3;
 }
 
 .images {
     display:flex;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .images div {
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 150px;
     width: 150px;
